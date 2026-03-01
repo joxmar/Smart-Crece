@@ -1,0 +1,49 @@
+/* Load fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap');
+
+@import 'tailwindcss';
+
+/* branding: custom fonts and colors*/
+@theme {
+  /* fonts */
+  --font-sans: 'Poppins', sans-serif;
+
+  /* colors */
+  --color-brand-1: #ccf17e;
+  --color-brand-2: #244a40;
+  --color-brand-3: #101010;
+  --color-brand-4: #f2f2f2;
+  --color-brand-5: #ffffff;
+}
+
+.home-banner-content {
+  opacity: 0;
+  animation: fade-in .5s ease-in-out forwards;
+  animation-delay: .3s;
+}
+
+.home-banner-image {
+  opacity: 0;
+  animation: fade-in .5s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+

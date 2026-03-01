@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Crece | Financial Skills for Every Generation</title>
+  <meta name="description"
+    content="Financial freedom begins with understanding. We exist to close the knowledge gap by teaching financial literacy to all generations.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="images/favicon.jpg">
+</head>
+
+<body
+  class="font-sans bg-[var(--color-brand-5)] text-[var(--color-brand-3)] antialiased flex flex-col min-h-screen selection:bg-[var(--color-brand-1)] selection:text-[var(--color-brand-2)]">
+
+  <!-- Navigation -->
+  <nav
+    class="fixed w-full z-50 bg-[var(--color-brand-5)]/90 backdrop-blur-md shadow-sm transition-all duration-300 border-b border-[var(--color-brand-4)]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="#home" class="flex items-center gap-2">
+            <div
+              class="w-10 h-10 rounded-full bg-[var(--color-brand-1)] flex items-center justify-center text-[var(--color-brand-2)] font-bold text-xl">
+              SC
+            </div>
+            <span class="font-bold text-2xl tracking-tight text-[var(--color-brand-2)]">Smart Crece</span>
+          </a>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#about"
+            class="text-sm font-medium text-[var(--color-brand-2)] hover:text-brand-2/50 transition">Mission</a>
+          <a href="#programs"
+            class="text-sm font-medium text-[var(--color-brand-2)] hover:text-brand-2/50 transition">Programs</a>
+          <a href="#aboutme"
+            class="text-sm font-medium text-[var(--color-brand-2)] hover:text-brand-2/50 transition">About</a>
+          <a href="#contact"
+            class="px-5 py-2.5 rounded-full bg-[var(--color-brand-2)] text-[var(--color-brand-5)] text-sm font-semibold hover:bg-[var(--color-brand-1)] hover:text-[var(--color-brand-2)] transition shadow-md">Get
+            Started</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-btn"
+            class="text-[var(--color-brand-2)] hover:text-[var(--color-brand-1)] transition focus:outline-none p-2">
+            <i data-lucide="menu" class="w-7 h-7"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="md:hidden hidden bg-[var(--color-brand-5)] border-t border-[var(--color-brand-4)] transition-all duration-300 shadow-lg absolute w-full left-0 top-20">
+      <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col">
+        <a href="#about"
+          class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-[var(--color-brand-2)] hover:bg-[var(--color-brand-1)]/20 transition">Mission</a>
+        <a href="#programs"
+          class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-[var(--color-brand-2)] hover:bg-[var(--color-brand-1)]/20 transition">Programs</a>
+        <a href="#aboutme"
+          class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-[var(--color-brand-2)] hover:bg-[var(--color-brand-1)]/20 transition">About</a>
+        <a href="#contact"
+          class="mobile-link mt-4 block text-center px-5 py-3 rounded-full bg-[var(--color-brand-2)] text-[var(--color-brand-5)] text-base font-semibold hover:bg-[var(--color-brand-1)] hover:text-[var(--color-brand-2)] transition shadow-md">Get
+          Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow">
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-[var(--color-brand-4)]">
+      <!-- Decorative blobs -->
+      <div
+        class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-[var(--color-brand-1)] rounded-full mix-blend-multiply opacity-30 blur-3xl animate-blob">
+      </div>
+      <div
+        class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-[var(--color-brand-2)] rounded-full mix-blend-multiply opacity-10 blur-3xl animate-blob animation-delay-2000">
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="flex flex-col justify-center home-banner-content">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white text-[var(--color-brand-2)] text-sm font-semibold mb-6 shadow-sm w-max border border-[var(--color-brand-1)]">
+              <span class="w-2 h-2 rounded-full bg-[var(--color-brand-1)]"></span>
+              Turning Knowledge into Wealth
+            </div>
+            <h1 class="text-5xl lg:text-7xl font-bold text-[var(--color-brand-2)] leading-[1.1] mb-6 tracking-tight">
+              Empower your Future: <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-brand-2)] to-[#8ab73a]">Financial
+                Skills</span> for Every Generation
+            </h1>
+            <p class="text-lg text-[var(--color-brand-3)] mb-8 max-w-lg leading-relaxed opacity-80">
+              Financial freedom begins with understanding. We exist to close the knowledge gap by teaching financial
+              literacy to teens, families, professionals, and retirees.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="#programs"
+                class="px-8 py-4 rounded-full bg-[var(--color-brand-1)] text-[var(--color-brand-2)] font-semibold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                Explore Our Programs <i data-lucide="arrow-right" class="w-5 h-5"></i>
+              </a>
+              <a href="#contact"
+                class="px-8 py-4 rounded-full bg-white text-[var(--color-brand-2)] font-semibold text-lg hover:bg-[var(--color-brand-4)] transition-all duration-300 border border-[var(--color-brand-2)] shadow-sm">
+                Build Your Confidence
+              </a>
+            </div>
+          </div>
+          <div class="relative home-banner-image">
+            <div
+              class="absolute inset-0 bg-gradient-to-tr from-[var(--color-brand-1)] to-transparent opacity-20 rounded-3xl transform translate-x-4 translate-y-4">
+            </div>
+            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=1200"
+              alt="A group of friends at a coffee shop"
+              class="relative rounded-3xl shadow-2xl object-cover h-[500px] w-full transform hover:-translate-y-2 transition duration-500">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section id="about" class="py-24 bg-[var(--color-brand-2)] text-[var(--color-brand-5)] relative overflow-hidden">
+      <!-- Background pattern -->
+      <div class="absolute inset-0 opacity-5"
+        style="background-image: radial-gradient(var(--color-brand-1) 1px, transparent 1px); background-size: 30px 30px;">
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-4xl mx-auto mb-20">
+          <i data-lucide="quote" class="w-16 h-16 text-[var(--color-brand-1)] mx-auto mb-6 opacity-80"></i>
+          <h2 class="text-3xl md:text-5xl font-bold leading-tight mb-8">
+            "Because when people understand money, they gain control over their future"
+          </h2>
+          <div class="w-24 h-1 bg-[var(--color-brand-1)] mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div
+            class="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition duration-300">
+            <div
+              class="w-14 h-14 rounded-2xl bg-[var(--color-brand-1)] text-[var(--color-brand-2)] flex items-center justify-center mb-6">
+              <i data-lucide="target" class="w-8 h-8"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-[var(--color-brand-1)]">Our Mission</h3>
+            <p class="text-lg leading-relaxed opacity-90">
+              We empower teenagers, families, professionals and retirees with the knowledge and confidence to make
+              smarter financial decisions—through education in personal finance, investing, real estate, and
+              entrepreneurship.
+            </p>
+          </div>
+          <div
+            class="p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition duration-300">
+            <div
+              class="w-14 h-14 rounded-2xl bg-[var(--color-brand-1)] text-[var(--color-brand-2)] flex items-center justify-center mb-6">
+              <i data-lucide="eye" class="w-8 h-8"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-[var(--color-brand-1)]">Our Vision</h3>
+            <p class="text-lg leading-relaxed opacity-90">
+              A world where people of every generation feel confident, informed, and empowered to make financial
+              decisions that shape their future. It’s about freedom, opportunity, and building meaningful legacies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs / Audiences Section -->
+    <section id="programs" class="py-24 bg-[var(--color-brand-4)] relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-[var(--color-brand-2)] text-base font-bold tracking-wider uppercase mb-2">Tailored for Every
+            Stage of Life</h2>
+          <h3 class="text-4xl md:text-5xl font-bold text-[var(--color-brand-3)]">Financial Knowledge for Everyone</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <!-- Card 1 -->
+          <div
+            class="bg-[var(--color-brand-5)] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group border border-gray-100 flex flex-col">
+            <div class="relative h-60 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800"
+                alt="Students" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <span
+                  class="px-3 py-1 bg-[var(--color-brand-1)] text-[var(--color-brand-2)] text-xs font-bold rounded-full">Students</span>
+              </div>
+            </div>
+            <div class="p-8 flex-1 flex flex-col">
+              <h4 class="text-2xl font-bold text-[var(--color-brand-2)] mb-3">High School & College</h4>
+              <p class="text-[var(--color-brand-3)] font-medium mb-6 opacity-75">Start Smart with Your Money Today</p>
+              <ul class="space-y-3 mb-8 flex-1">
+                <li class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-6 h-6 text-[var(--color-brand-1)] flex-shrink-0"></i> <span>Budgeting basics & avoiding
+                    debt</span></li>
+                <li class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-6 h-6 text-[var(--color-brand-1)] flex-shrink-0"></i> <span>Understanding & building
+                    credit</span></li>
+                <li class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-6 h-6 text-[var(--color-brand-1)] flex-shrink-0"></i> <span>Taxes 101</span></li>
+                <li class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-6 h-6 text-[var(--color-brand-1)] flex-shrink-0"></i> <span>Investing 101 &
+                    Entrepreneurship</span></li>
+              </ul>
+              <a href="#contact"
+                class="w-full block text-center py-3 rounded-xl bg-brand-2 text-white font-semibold hover:bg-[var(--color-brand-1)] hover:text-brand-2 transition">Start
+                Learning</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-[var(--color-brand-5)] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group border border-gray-100 flex flex-col">
+            <div class="relative h-60 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=800"
+                alt="Young Adults" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <span
+                  class="px-3 py-1 bg-[var(--color-brand-1)] text-[var(--color-brand-2)] text-xs font-bold rounded-full">Professionals</span>
+              </div>
+            </div>
+            <div class="p-8 flex-1 flex flex-col">
+              <h4 class="text-2xl font-bold text-[var(--color-brand-2)] mb-3">Young Adults (20s-30s)</h4>
+              <p class="text-[var(--color-brand-3)] font-medium mb-6 opacity-75">Take control of your Financial Future
+              </p>
+              <ul class="space-y-3 mb-8 flex-1">
+                <li class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-6 h-6 text-[var(--color-brand-1)] flex-shrink-0"></i> <span>Credit building & student
+                    loans</span></li>
+                <li class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-6 h-6 text-[var(--color-brand-1)] flex-shrink-0"></i> <span>Realistic budgeting (rent,
+                    lifestyle)</span></li>
+                <li class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-6 h-6 text-[var(--color-brand-1)] flex-shrink-0"></i> <span>Saving for goals (car, home,
+                    travel)</span></li>
+                <li class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-6 h-6 text-[var(--color-brand-1)] flex-shrink-0"></i> <span>Retirement accounts (401K, Roth
+                    IRA)</span></li>
+              </ul>
+              <a href="#contact"
+                class="w-full block text-center py-3 rounded-xl bg-brand-2 text-white font-semibold hover:bg-[var(--color-brand-1)] hover:text-brand-2 transition">Start
+                Learning</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-[var(--color-brand-5)] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group border border-gray-100 flex flex-col">
+            <div class="relative h-60 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+                alt="Families" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <span
+                  class="px-3 py-1 bg-[var(--color-brand-1)] text-[var(--color-brand-2)] text-xs font-bold rounded-full">Families</span>
+              </div>
+            </div>
+            <div class="p-8 flex-1 flex flex-col">
+              <h4 class="text-2xl font-bold text-[var(--color-brand-2)] mb-3">Families & Wealth</h4>
+              <p class="text-[var(--color-brand-3)] font-medium mb-6 opacity-75">Protect your Family, build your Legacy
+              </p>
+              <ul class="space-y-3 mb-8 flex-1">
+                <li class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-6 h-6 text-[var(--color-brand-1)] flex-shrink-0"></i> <span>Family budgeting & emergency
+                    funds</span></li>
+                <li class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-6 h-6 text-[var(--color-brand-1)] flex-shrink-0"></i> <span>Saving for kids’ education (529
+                    plans)</span></li>
+                <li class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-6 h-6 text-[var(--color-brand-1)] flex-shrink-0"></i> <span>Insurance, Life, Health &
+                    Protection</span></li>
+                <li class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-6 h-6 text-[var(--color-brand-1)] flex-shrink-0"></i> <span>Estate basics (wills,
+                    trusts)</span></li>
+              </ul>
+              <a href="#contact"
+                class="w-full block text-center py-3 rounded-xl bg-brand-2 text-white font-semibold hover:bg-[var(--color-brand-1)] hover:text-brand-2 transition">Start
+                Learning</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="aboutme" class="py-24 bg-[var(--color-brand-5)] border-t border-[var(--color-brand-4)]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="order-2 lg:order-1 relative">
+            <div
+              class="absolute inset-0 bg-[var(--color-brand-2)] opacity-10 rounded-3xl transform -translate-x-4 -translate-y-4">
+            </div>
+            <img src="images/tela-portrait.jpg" alt="About Me - Professional"
+              class="relative rounded-3xl shadow-xl w-full h-[600px] object-cover">
+
+            <div
+              class="absolute -bottom-10 -right-10 bg-[var(--color-brand-1)] text-[var(--color-brand-2)] p-8 rounded-3xl shadow-2xl max-w-xs hidden md:block">
+              <i data-lucide="quote" class="w-8 h-8 mb-4 opacity-50"></i>
+              <p class="font-bold text-lg">“Stewardship done wisely turns money into a tool for freedom, purpose, and
+                legacy.”</p>
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2 flex flex-col justify-center">
+            <h2 class="text-[var(--color-brand-2)] text-base font-bold tracking-wider uppercase mb-2">About Me</h2>
+            <h3 class="text-4xl md:text-5xl font-bold text-[var(--color-brand-3)] mb-8">30+ Years of Financial
+              Experience</h3>
+
+            <p class="text-lg text-[var(--color-brand-3)] opacity-80 mb-6 leading-relaxed">
+              With over 30 years of financial experience, including 17 years working in US banking and wealth
+              management, I bring a deep understanding of how money works across every stage of life.
+            </p>
+            <p class="text-lg text-[var(--color-brand-3)] opacity-80 mb-8 leading-relaxed">
+              I work closely with clients to analyze their financial picture, identify opportunities, and create
+              strategies that align with their goals, helping them build wealth with intention and establish a legacy
+              that extends beyond one generation.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+              <div class="p-6 bg-[var(--color-brand-4)] rounded-2xl">
+                <i data-lucide="graduation-cap" class="w-8 h-8 text-[var(--color-brand-2)] mb-4"></i>
+                <h4 class="font-bold text-[var(--color-brand-3)] mb-2">Education</h4>
+                <p class="text-[var(--color-brand-3)] opacity-80 text-sm">Unitec<br>Evangel University</p>
+              </div>
+              <div class="p-6 bg-[var(--color-brand-4)] rounded-2xl">
+                <i data-lucide="award" class="w-8 h-8 text-[var(--color-brand-2)] mb-4"></i>
+                <h4 class="font-bold text-[var(--color-brand-3)] mb-2">Skills</h4>
+                <p class="text-[var(--color-brand-3)] opacity-80 text-sm">Financial analysis, Marketing, Communication,
+                  Human-centered approach.</p>
+              </div>
+            </div>
+
+            <div
+              class="block md:hidden bg-[var(--color-brand-1)] text-[var(--color-brand-2)] p-6 rounded-2xl shadow-xl mt-4">
+              <i data-lucide="quote" class="w-6 h-6 mb-2 opacity-50"></i>
+              <p class="font-bold">“Stewardship done wisely turns money into a tool for freedom, purpose, and legacy.”
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer & Contact -->
+  <footer id="contact"
+    class="bg-[var(--color-brand-3)] text-[#f2f2f2] pt-20 pb-10 border-t-4 border-[var(--color-brand-1)] relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+        <div class="col-span-1 lg:col-span-2">
+          <a href="#home" class="flex items-center gap-2 mb-6">
+            <div
+              class="w-10 h-10 rounded-full bg-[var(--color-brand-1)] flex items-center justify-center text-[var(--color-brand-2)] font-bold text-xl">
+              SC
+            </div>
+            <span class="font-bold text-2xl tracking-tight text-white">Smart Crece</span>
+          </a>
+          <p class="text-white/70 max-w-md mb-8 leading-relaxed">
+            Financial knowledge for every stage of life. Turn income into opportunity, decisions into strategy, and
+            goals into reality.
+          </p>
+          <!-- <div class="flex gap-4">
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--color-brand-1)] hover:text-[var(--color-brand-2)] transition"><i
+                data-lucide="facebook" class="w-5 h-5"></i></a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--color-brand-1)] hover:text-[var(--color-brand-2)] transition"><i
+                data-lucide="instagram" class="w-5 h-5"></i></a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--color-brand-1)] hover:text-[var(--color-brand-2)] transition"><i
+                data-lucide="linkedin" class="w-5 h-5"></i></a>
+          </div> -->
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-lg mb-6">Quick Links</h4>
+          <ul class="space-y-4">
+            <li><a href="#home" class="text-white/70 hover:text-[var(--color-brand-1)] transition">Home</a></li>
+            <li><a href="#about" class="text-white/70 hover:text-[var(--color-brand-1)] transition">Our Mission &
+                Vision</a></li>
+            <li><a href="#programs" class="text-white/70 hover:text-[var(--color-brand-1)] transition">Programs</a></li>
+            <li><a href="#aboutme" class="text-white/70 hover:text-[var(--color-brand-1)] transition">About</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-lg mb-6">Contact Us</h4>
+          <ul class="space-y-4">
+            <li class="flex items-center gap-3 text-white/70">
+              <i data-lucide="mail" class="w-5 h-5 text-[var(--color-brand-1)]"></i>
+              <a href="mailto:smartcrece@smartcrece.com"
+                class="hover:text-white transition">smartcrece@smartcrece.com</a>
+            </li>
+            <li class="flex items-center gap-3 text-white/70">
+              <i data-lucide="phone" class="w-5 h-5 text-[var(--color-brand-1)]"></i>
+              <a href="tel:XXX-XXX-XXXX" class="hover:text-white transition">XXX-XXX-XXXX</a>
+            </li>
+            <li class="flex items-center gap-3 text-white/70">
+              <i data-lucide="globe" class="w-5 h-5 text-[var(--color-brand-1)]"></i>
+              <a href="http://www.smartcrece.com" class="hover:text-white transition">www.smartcrece.com</a>
+            </li>
+            <li class="flex items-center gap-3 text-white/70">
+              <i data-lucide="map-pin" class="w-5 h-5 text-[var(--color-brand-1)]"></i>
+              <span>Houston, TX</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div
+        class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+        <p>&copy; 2026 Smart Crece. All rights reserved.</p>
+        <p>Turning Knowledge into Wealth</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      const menuIcon = mobileMenuBtn.querySelector('i');
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.setAttribute('data-lucide', 'menu');
+      } else {
+        menuIcon.setAttribute('data-lucide', 'x');
+      }
+      lucide.createIcons();
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        const menuIcon = mobileMenuBtn.querySelector('i');
+        menuIcon.setAttribute('data-lucide', 'menu');
+        lucide.createIcons();
+      });
+    });
+  </script>
+</body>
+
+</html>
